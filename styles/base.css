@@ -1,114 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
+header {
+    background-color: #201f1f6f;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+}
 
-    header {
-        background-color: #201f1f6f;
-        display: grid;
-        padding: 10px;
-        grid-template-columns: 200px 1fr;
-        justify-content: center;
-        align-items: center;
-    }
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
-    nav {
-        padding: 10px;
-        background-color: #0a0a0ab2;
-        align-items: center;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin-top: 0;
-    }
+#menu::before {
+    content: "☰";
+}
 
-    nav ul {
-        list-style-type: none;
-        margin: auto;
-        box-sizing: border-box;
-    }
+#menu.open::before {
+    content: "X";
+}
 
-    nav li {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
 
-    nav a {
-        color: white;
-        padding: .5rem;
-        text-decoration: none;
-    }
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
 
-    nav a:hover {
-        color: #f7f3f3;
-        background-color: #201f1f6f;
-        transition: .5s;
-    }
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
 
-    li .active {
-        background-color: #201f1f6f;
-    }
+.open a {
+    display: block;
+}
 
-    h1 {
-        text-shadow: 0 0 15px #292929;
-        color: #0a0a0ab2;
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: 'Roboto', sans-serif;
-    }
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
 
-    h2 {
-        text-shadow: 0 0 15px #292929;
-        color: #0a0a0ab2;
-        font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        border-bottom: 1px solid #acacac;
-        margin-top: 10px;
-        text-align: center;
-    }
+h1 {
+    text-shadow: 0 0 15px #292929;
+    color: #0a0a0ab2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
 
-    .cards {
-        margin: 1rem 2vw;
-    }
+h2 {
+    text-shadow: 0 0 15px #292929;
+    color: #0a0a0ab2;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #acacac;
+    margin-top: 10px;
+    text-align: center;
+}
 
-    .cards section {
-        border: 1px solid #201f1f6f;
-        background-color: #acacac;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 1rem 0;
-    }
+.cards {
+    margin: 1rem 2vw;
+}
 
-    section ul li {
-        margin-bottom: 10px;
-    }
+.cards section {
+    border: 1px solid #201f1f6f;
+    background-color: #acacac;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
 
-    .cards span {
-        background-color: #201f1f6f;
-        color: #f7f3f3;
-        display: block;
-        text-align: center;
-        padding: .75rem 0;
-        font-family: 'Roboto', sans-serif;
-    }
+section ul li {
+    margin-bottom: 10px;
+}
 
-    .cards p {
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;
-    }
+.cards span {
+    background-color: #201f1f6f;
+    color: #f7f3f3;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+    font-family: 'Roboto', sans-serif;
+}
 
-    footer {
-        padding: 10px;
-        background-color: #201f1f6f;
-        text-align: center;
-        font-size: smaller;
-    }
+.cards p {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
 
-    #lastModified {
-        color: rgb(251, 255, 0);
-        text-align: center;
-        font-size: smaller;
-        display: grid;
-    }
+footer {
+    padding: 10px;
+    background-color: #201f1f6f;
+    text-align: center;
+    font-size: smaller;
+}
+
+#lastModified {
+    color: rgb(251, 255, 0);
+    text-align: center;
+    font-size: smaller;
+    display: grid;
+}

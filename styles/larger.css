@@ -1,19 +1,12 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 37.5em) {
 
-    body {
-        margin: auto;
-        font-size: 18px;
-        line-height: 1.5;
-        font-family: 'Roboto', sans-serif;
+    * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
 
-    header,
-    nav,
-    main,
-    footer {
-        margin: auto;
-    }
+
 
     header img {
         border-radius: 8px;
@@ -27,42 +20,36 @@
         align-items: center;
     }
 
-    nav {
-        padding: 10px;
-        background-color: #0a0a0ab2;
-        align-items: center;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin-top: 0;
+    #menu {
+        display: none;
+        /* hide hamburger button */
     }
 
-    nav ul {
-        list-style-type: none;
-        display: inline-flex;
-        margin: auto;
-        box-sizing: border-box;
+    .navigation {
+        flex-direction: row;
+
+        list-style: none;
+        background-color: #333;
+        color: #fff;
     }
 
-    nav li {
-        margin-right: 30px;
-        margin-left: 30px;
+
+    	.navigation a {
+    	    display: block;
+    	    flex: 1 1 100%;
+    	}
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #201f1f6f;
+        font-weight: 700;
     }
 
-    nav a {
-        color: white;
-        padding: .5rem;
-        text-decoration: none;
+    .active::before {
+        content: "📍";
+        /* just a wayfinding symbol for the user */
     }
 
-    nav a:hover {
-        color: #f7f3f3;
-        background-color: #201f1f6f;
-        transition: .5s;
-    }
-
-    li .active {
-        background-color: #201f1f6f;
-    }
 
     header h1 {
         text-shadow: 0 0 15px #292929;

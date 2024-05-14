@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>"Daniel Caetano - WDD 230 - Web Frontend Development"</title>
+    <meta property="og:title" content="Portal page for a Web Frontend Development">
+    <meta property="og:type" content="website " />
+    <meta property="og:image" content="http://www.jerarquicos.com/vendedor/lib/zenphoto/albums/Turismo/Espana-y-Portugal/madrid.JPG">
+    <meta property="og:url" content="https://danicd7.github.io/wdd230/index.html">
     <meta name="description" content="Daniel Caetano's course assignment portal in WDD 230: Web Frontend Development | BYU-Idaho" />
     <meta name="author" content="Daniel Caetano" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
-    <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
 </head>
 <body>
     
@@ -19,13 +23,13 @@
         <img src="images/index.mypictureNew.jpg" alt="Daniel taking a self" width="200" height="150">
         <h1>Daniel Cândido Caetano Da SIlva</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href="">Form</a></li>
-        </ul>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" title="Home">Chamber</a>
+        <a href="#" title="About Us" class="active">Home</a>
+        <a href="#" title="Service">Site Plan</a>
+        <a href="#" title="History">Form</a>
     </nav>
 
     <main>
