@@ -24,6 +24,15 @@ header {
     right: 1rem;
 }
 
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 #menu::before {
     content: "☰";
 }
