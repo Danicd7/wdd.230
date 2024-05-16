@@ -1,0 +1,116 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: auto;
+    }
+
+    header {
+        background-color: #32528875;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        text-shadow: 0 0 15px #292929;
+        color: #c603037f;
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+        border: 1px solid #201f1f6f;
+        background-color: #32528838;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .parent h2 {
+        margin-top: 0;
+        background-color: #32528875;
+        color: #f7f3f3;
+        display: block;
+        text-align: center;
+        padding: .75rem 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .parent p {
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .parent span {
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    footer {
+        padding: 10px;
+        background-color: #32528875;
+        ;
+        text-align: center;
+        font-size: smaller;
+        margin: auto;
+    }

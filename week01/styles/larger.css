@@ -1,0 +1,31 @@
+@media only screen and (min-width: 37.5em) {
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+
+        list-style: none;
+        
+        color: #fff;
+    }
+
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #201f1f6f;
+        font-weight: 700;
+    }
+
+    .active::before {
+        content: "📍";
+        /* just a wayfinding symbol for the user */
+    }
+}
