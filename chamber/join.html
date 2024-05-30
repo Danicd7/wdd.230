@@ -1,0 +1,84 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="!DOCTYPEX-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portal page for a commercial chamber in Madrid">
+    <meta property="og:type" content="website " />
+    <meta property="og:image"
+        content="http://www.jerarquicos.com/vendedor/lib/zenphoto/albums/Turismo/Espana-y-Portugal/madrid.JPG">
+    <meta property="og:url" content="https://danicd7.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="Daniel Caetano">
+    <meta name="description" content="Chamber of commerce from Madrid, Spain">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+    <title>Chamber of Commerce | Madrid | Spain</title>
+</head>
+
+<body class="bodyForm">
+        <header>
+            <h1>
+                Madrid<br>Chamber of Commerce
+            </h1>
+        
+            <button id="menu"></button>
+            <nav class="navigation">
+                <a href="#" title="Home">Chamber</a>
+                <a href="#" title="About Us" class="active">Home</a>
+                <a href="#" title="Service">Site Plan</a>
+                <a href="#" title="History">Form</a>
+            </nav>
+        
+        </header>
+    <main>
+        <div class="form">
+            <h1 class="h1Form">Membership</h1>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Aplicant Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required id="fname"></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required id="fname"></label>
+                    <label class="top">Title or Position<input type="text" name="titlePosition" id="titlePosition"
+                            pattern="[A-Za-z -]{7,}"></label>
+                    <label class="top">Email*<input type="email" name="email" required id="email"
+                            placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone <input type="tel" name="Phone" required id="phone"
+                            placeholder="1235551234"></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>business/organization's Information</legend>
+                    <label class="top">business/organization's name<input type="text" required name="business"
+                            id="business"></label>
+                    <div>membership level:</div>
+                    <label class="sbs"><input type="radio" name="membership" value="NP">NP non profit
+                        organization</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+                    <label class="top">Description of your Organization/company</label>
+                    <textarea type="text" name="description" id="description" cols="30" rows="10"></textarea>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Let me in" class="submitBtn">
+            </form>
+        </div>
+
+        </main>
+        
+        
+        
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Madrid's Chamber of Commerce.:|:. Daniel C. C. Da Silvao .:|:. WDD230
+                .:|:. Madrid</p>
+        </footer>
+        
+        <script src="scripts/chamber.js"></script>
+        </body>
+        
+        </html>

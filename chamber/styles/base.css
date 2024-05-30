@@ -23,7 +23,11 @@ header h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 2.5rem;
     font-family: 'Roboto', sans-serif;
 
@@ -74,15 +78,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .active::before {
-    content: "📍"; 
+    content: "📍";
 }
 
-.hero img{
-   grid-row: 1;
-   max-width: 100%;
-   height: auto;
-   width: 100%;
-   margin: auto;
+.hero img {
+    grid-row: 1;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: auto;
 
 }
 
@@ -103,11 +107,11 @@ h1, h2, h3, h4, h5 {
     border-radius: 5px;
 }
 
-        .cards {
-            display: grid;
-            grid-template-rows: auto auto auto;
-            column-gap: 20px;
-        }
+.cards {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;
+}
 
 .cards section {
     border: 1px solid #201f1f6f;
@@ -227,4 +231,89 @@ footer {
     background-color: yellow;
     padding: 2px 5px;
     font-weight: bold;
+}
+
+/*----------- FORM --------------*/
+.bodyForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h1Form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 20rem;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearence: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem .5rem;
+    color: #555;
+}
+
+form label.sbs input {
+    padding: 0 .2rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+textarea {
+    width: 100%;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }
