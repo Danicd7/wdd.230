@@ -77,8 +77,8 @@ h5 {
     display: block;
 }
 
-.active::before {
-    content: "📍";
+.active {
+    color:#c603037f;
 }
 
 .hero img {
