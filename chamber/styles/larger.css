@@ -1,14 +1,15 @@
 @media only screen and (min-width: 37.5em) {
-    header,
-        nav,
-        main,
-        footer {
-            max-width: 760px;
-            margin: auto;
-        }
+
     #menu {
         display: none;
         /* hide hamburger button */
+    }
+
+    header h1 {
+        text-shadow: 0 0 15px #292929;
+        color: #8903037f;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     .navigation {
@@ -35,4 +36,18 @@
         content: "📍";
         /* just a wayfinding symbol for the user */
     }
+
+    .weather {
+        align-items: center;
+    }
+
+      section.weather #temperature {
+             font-size: 2rem;
+             margin: .3rem 0;
+         }
+    
+         .weather p #description {
+             text-transform: capitalize;
+             margin: .3rem 0;
+         }
 }
